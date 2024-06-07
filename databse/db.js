@@ -6,7 +6,7 @@ dotenv.config();
 
 const connectDB = async () => {
     try {
-        await mongoose.connect("process.env.MONGODB_URI", {
+        await mongoose.connect(process.env.MONGODB_URI, {
             // Remove deprecated options
             // Use new URL parser
             useNewUrlParser: true,
